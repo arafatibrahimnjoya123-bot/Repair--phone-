@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Répair Phone - Yaoundé, Efoulan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>📱 Répair Phone</h1>
+  <p class="sous-titre">Tu casses, on répare — Yaoundé, Efoulan</p>
+
+  <div class="card">
+    <h3>📱 Réparation Téléphones</h3>
+    <p>Écran cassé, batterie, eau, déblocage... On répare toutes marques : iPhone, Samsung, Tecno, Infinix.</p>
+  </div>
+
+  <div class="card">
+    <h3>💻 Réparation Ordinateurs</h3>
+    <p>Windows qui rame, virus, écran, clavier, installation. On s'occupe de ton PC / Mac.</p>
+  </div>
+
+  <div class="card">
+    <h3>🎧 Accessoires</h3>
+    <p>Coques, vitres trempées, chargeurs, écouteurs, câbles. Qualité garantie.</p>
+  </div>
+
+  <div class="card form-card">
+    <h3>📝 Demander une Réparation</h3>
+    <input type="text" id="nomClient" placeholder="Ton nom *">
+    <input type="text" id="telClient" placeholder="Ton numéro WhatsApp">
+    <input type="text" id="appareil" placeholder="Appareil (ex: iPhone 11, Samsung A32...)">
+    <textarea id="probleme" placeholder="C'est quoi le problème ? *"></textarea>
+    <button class="btn-envoyer" onclick="envoyerDemande()">Envoyer ma demande sur WhatsApp</button>
+    <p id="msg"></p>
+  </div>
+
+  <div class="card">
+    <h3>📂 Mes Demandes Enregistrées</h3>
+    <p id="listeDemandes">Aucune demande pour le moment.</p>
+    <button class="btn-effacer" onclick="effacerDemandes()">Effacer tout</button>
+  </div>
+
+  <a class="btn-full" href="https://wa.me/237641100827">📋 Demander un Devis</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
